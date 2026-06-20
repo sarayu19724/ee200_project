@@ -9,7 +9,7 @@ from scipy.ndimage import maximum_filter
 # CONFIG
 # =====================================================
 
-SR = 22050  # Sample rate
+SR = 8000  # Sample rate
 N_FFT = 2048  # FFT window size
 HOP_LENGTH = 512  # Hop length for STFT
 
@@ -40,6 +40,7 @@ def load_audio(path, sr=SR):
         path,
         sr=sr,
         mono=True
+        duration=60
     )
     return y
 
