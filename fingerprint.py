@@ -39,7 +39,7 @@ def load_audio(path, sr=SR):
     y, _ = librosa.load(
         path,
         sr=sr,
-        mono=True
+        mono=True,
         duration=60
     )
     return y
