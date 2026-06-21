@@ -15,6 +15,7 @@ st.set_page_config(
 )
 
 # Custom CSS for better aesthetics
+
 st.markdown("""
     <style>
     .metric-box {
@@ -24,9 +25,11 @@ st.markdown("""
         border-left: 3px solid #00d4ff;
         margin: 10px 0;
     }
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
     </style>
 """, unsafe_allow_html=True)
-
 
 @st.cache_resource
 def load_database():
