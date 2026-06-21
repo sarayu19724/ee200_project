@@ -9,7 +9,7 @@ from scipy.ndimage import maximum_filter
 # CONFIG
 # =====================================================
 
-SR = 15000 # Sample rate
+SR = 22050 # Sample rate
 N_FFT = 2048  # FFT window size
 HOP_LENGTH = 512  # Hop length for STFT
 
